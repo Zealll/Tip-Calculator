@@ -36,6 +36,8 @@ const Form = props => {
                   name='server'
                   placeholder='# of Servers'
                   onChange={handler}
+                  required
+                  min='0'
                 />
                 Busser 
                 <input 
@@ -43,6 +45,8 @@ const Form = props => {
                   name='busboy'
                   placeholder='# of Bus Boys'
                   onChange={handler}
+                  required
+                  min='0'
                 />
                 Bartender 
                 <input 
@@ -50,13 +54,18 @@ const Form = props => {
                   name='bartender'
                   placeholder='# of Bartenders'
                   onChange={handler}
+                  required
+                  min='0'
                 />
                 Total Tip
                 <input 
-                  type='float'
+                  type='number'
                   name='tip'
                   placeholder='Tip'
                   onChange={handler}
+                  required
+                  min='0'
+                  step='0.01'
                 />
                 {err && err}
                 <button>Calculate</button>

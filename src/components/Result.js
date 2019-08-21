@@ -11,9 +11,9 @@ const Result = props => {
         const server = Number(props.state.server)
         console.log(server, busser, bartender, total)
 
-        const bartenderTotal = (total / 100) * 5 / bartender
-        const busserTotal = (total / 100) * 15 / busser
-        const serverTotal = ((total - (bartenderTotal * bartender + busserTotal * busser)) / server)
+        const bartenderTotal = bartender === 0 ? 0 : (total / 100) * 5 / bartender
+        const busserTotal = busser === 0 ? 0 : (total / 100) * 15 / busser
+        const serverTotal = server === 0 ? 0 : ((total - (bartenderTotal * bartender + busserTotal * busser)) / server)
         
         return (
             <div>
