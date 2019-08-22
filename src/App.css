@@ -35,3 +35,53 @@
 .nav {
   border-bottom: 2px solid rgb(221, 236, 13)
 }
+
+.form {
+  margin-top: 20px
+}
+
+.pick {
+  width: 110px
+}
+
+.picks {
+  max-width: 300px;
+  min-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none
+}
+
+.wide {
+  width: 100px;
+  height: 20px;
+  padding: 0 0;
+  line-height: 0;
+  margin:  15px auto
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  display: flex;
+
+}
+
+p {
+  margin: 2px
+}
+
+.st{
+  margin: 5px 0
+}
