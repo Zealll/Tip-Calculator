@@ -6,13 +6,14 @@ const NightForm = props => {
     const [obj, setObj] = useState({name: '', time: ''})
     
     const [arr, setArr] = useState({serverArr: [], busserArr: [], barArr: []})
+    // {name: 'a', time: 2}, {name: 'b', time: 3}, {name: 'a', time: 2},{name: 'c', time: 5},{name: 'd', time: 10}
 
     const [total, setTotal] = useState({tip: '', hours: ''})
 
     const handler = e => {
         setObj({
             ...obj,
-            [e.target.name]:e.target.value
+            [e.target.name]: e.target.value
         })
     }
 
