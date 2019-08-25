@@ -9,6 +9,7 @@ import Form from './components/Form.js'
 import Result from './components/Result.js'
 import NightForm from './components/NightForm.js'
 import NightResult from './components/NightResult.js'
+import Test from './components/Test.js'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <Route exact path='/result' render={props => <Result {...props} state={state} /> } />
       <Route exact path='/nightform' render={props => <NightForm {...props} setNightState={setNightState} />} />
       <Route exact path='/nightform/result' render={props => <NightResult {...props} nightState={nightState} />} />
+      {/* <Test /> */}
       
     </div>
   );
